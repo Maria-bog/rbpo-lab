@@ -1,0 +1,21 @@
+# CMake build directories
+/build*/
+
+# AFL++ generated corpus and runtime files
+/findings/
+
+# Large Clang Static Analyzer HTML reports
+/analysis/scan-build/
+/analysis/scan-build-fixed/
+
+# Generated files
+core
+core.*
+*.o
+*.a
+*.so
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store

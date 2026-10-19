@@ -1,0 +1,281 @@
+scan-build: Using '/usr/lib/llvm-20/bin/clang' for static analysis
+[  4%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/buf.c.o
+[  4%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/c14n.c.o
+[  6%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/catalog.c.o
+[  8%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/chvalid.c.o
+[ 10%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/debugXML.c.o
+[ 12%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/dict.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/catalog.c:827:12: warning: Dereference of null pointer (loaded from variable 'urn') [core.NullDereference]
+  827 |     while (*urn != 0) {
+      |            ^~~~
+1 warning generated.
+[ 14%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/encoding.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:2989:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 2989 | static const unsigned char xmltranscodetable_ISO8859_2 [48 + 6 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3038:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3038 | static const unsigned char xmltranscodetable_ISO8859_3 [48 + 7 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3091:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 3091 | static const unsigned char xmltranscodetable_ISO8859_4 [48 + 6 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3140:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 3140 | static const unsigned char xmltranscodetable_ISO8859_5 [48 + 6 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3189:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (369 chars into 368 available) [-Wunterminated-string-initialization]
+ 3189 | static const unsigned char xmltranscodetable_ISO8859_6 [48 + 5 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3234:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3234 | static const unsigned char xmltranscodetable_ISO8859_7 [48 + 7 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3287:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3287 | static const unsigned char xmltranscodetable_ISO8859_8 [48 + 7 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3340:72: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (369 chars into 368 available) [-Wunterminated-string-initialization]
+ 3340 | static const unsigned char xmltranscodetable_ISO8859_9 [48 + 5 * 64] = {
+      |                                                                        ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3385:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3385 | static const unsigned char xmltranscodetable_ISO8859_10 [48 + 7 * 64] = {
+      |                                                                         ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3438:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 3438 | static const unsigned char xmltranscodetable_ISO8859_11 [48 + 6 * 64] = {
+      |                                                                         ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3487:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (497 chars into 496 available) [-Wunterminated-string-initialization]
+ 3487 | static const unsigned char xmltranscodetable_ISO8859_13 [48 + 7 * 64] = {
+      |                                                                         ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3540:74: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (689 chars into 688 available) [-Wunterminated-string-initialization]
+ 3540 | static const unsigned char xmltranscodetable_ISO8859_14 [48 + 10 * 64] = {
+      |                                                                          ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3605:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (433 chars into 432 available) [-Wunterminated-string-initialization]
+ 3605 | static const unsigned char xmltranscodetable_ISO8859_15 [48 + 6 * 64] = {
+      |                                                                         ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/encoding.c:3654:73: warning: initializer-string for array of ‘unsigned char’ truncates NUL terminator but destination lacks ‘nonstring’ attribute (625 chars into 624 available) [-Wunterminated-string-initialization]
+ 3654 | static const unsigned char xmltranscodetable_ISO8859_16 [48 + 9 * 64] = {
+      |                                                                         ^
+[ 17%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/entities.c.o
+[ 19%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/error.c.o
+[ 21%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/globals.c.o
+[ 23%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/hash.c.o
+[ 25%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/HTMLparser.c.o
+[ 27%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/HTMLtree.c.o
+[ 29%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/legacy.c.o
+[ 31%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/list.c.o
+[ 34%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/nanoftp.c.o
+[ 36%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/nanohttp.c.o
+[ 38%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/parser.c.o
+[ 40%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/parserInternals.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parserInternals.c:1028:13: warning: Access to field 'end' results in a dereference of a null pointer (loaded from variable 'input') [core.NullDereference]
+ 1028 |     inlen = input->end - input->cur;
+      |             ^~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parserInternals.c:1250:14: warning: Array access (via field 'cur') results in a null pointer dereference [core.NullDereference]
+ 1250 |             (input->cur[0] == 0xFF) && (input->cur[1] == 0xFE)) {
+      |              ^~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parserInternals.c:1255:14: warning: Array access (via field 'cur') results in a null pointer dereference [core.NullDereference]
+ 1255 |             (input->cur[0] == 0xFE) && (input->cur[1] == 0xFF)) {
+      |              ^~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parserInternals.c:1265:14: warning: Array access (via field 'cur') results in a null pointer dereference [core.NullDereference]
+ 1265 |             (input->cur[0] == 0xEF) &&
+      |              ^~~~~~~~~~~~~
+4 warnings generated.
+[ 42%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/pattern.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/pattern.c:1961:3: warning: Value stored to 'desc' is never read [deadcode.DeadStores]
+ 1961 |                 desc = 0;
+      |                 ^      ~
+1 warning generated.
+[ 44%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/relaxng.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parser.c:2239:10: warning: Access to field 'cur' results in a dereference of a null pointer (loaded from field 'input') [core.NullDereference]
+ 2239 |     if (*ctxt->input->cur == 0)
+      |          ^~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parser.c:8891:34: warning: The right operand of '==' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 8891 |     if ((ret == name) && (prefix == prefix2))
+      |                                  ^  ~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parser.c:12127:14: warning: Access to field 'cur' results in a dereference of a null pointer (loaded from field 'input') [core.NullDereference]
+ 12127 |             (ctxt->input->cur < ctxt->input->end)) {
+       |              ^~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/parser.c:12717:26: warning: Access to field 'version' results in a dereference of a null pointer (loaded from variable 'oldctxt') [core.NullDereference]
+ 12717 |         if ((xmlStrEqual(oldctxt->version, BAD_CAST "1.0")) &&
+       |                          ^~~~~~~~~~~~~~~~
+4 warnings generated.
+[ 46%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/SAX.c.o
+[ 48%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/SAX2.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:6289:9: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 6289 |         ret = XML_RELAXNG_CONTENT_EMPTY;
+      |         ^     ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:6579:17: warning: Value stored to 'tmp' is never read [deadcode.DeadStores]
+ 6579 |                 tmp = xmlRelaxNGMaxContentType(val, ret);
+      |                 ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:9584:22: warning: Access to field 'seq' results in a dereference of a null pointer (loaded from field 'state') [core.NullDereference]
+ 9584 |     ctxt->state->seq = lastelem;
+      |           ~~~~~      ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:9925:30: warning: Access to field 'seq' results in a dereference of a null pointer (loaded from field 'state') [core.NullDereference]
+ 9925 |             ctxt->state->seq = node;
+      |                   ~~~~~      ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:10220:17: warning: Value stored to 'errNr' is never read [deadcode.DeadStores]
+ 10220 |                 errNr = ctxt->errNr;
+       |                 ^       ~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:10331:9: warning: Value stored to 'progress' is never read [deadcode.DeadStores]
+ 10331 |                                     progress = 0;
+       |                                     ^          ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:10507:50: warning: Access to field 'seq' results in a dereference of a null pointer (loaded from field 'state') [core.NullDereference]
+ 10507 |                                                  ctxt->state->seq);
+       |                                                  ^~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:10549:28: warning: Access to field 'value' results in a dereference of a null pointer (loaded from field 'state') [core.NullDereference]
+ 10549 |                 oldvalue = ctxt->state->value;
+       |                            ^~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/relaxng.c:10601:28: warning: Access to field 'value' results in a dereference of a null pointer (loaded from field 'state') [core.NullDereference]
+ 10601 |                 oldvalue = ctxt->state->value;
+       |                            ^~~~~~~~~~~~~~~~~~
+9 warnings generated.
+[ 51%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/schematron.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/SAX2.c:1195:6: warning: Array access (from variable 'val') results in a null pointer dereference [core.NullDereference]
+ 1195 |         if (val[0] != 0) {
+      |             ^~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/SAX2.c:1261:6: warning: Array access (from variable 'val') results in a null pointer dereference [core.NullDereference]
+ 1261 |         if (val[0] == 0) {
+      |             ^~~~~~
+2 warnings generated.
+[ 53%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/threads.c.o
+[ 55%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/tree.c.o
+[ 57%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/uri.c.o
+[ 59%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/valid.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/valid.c:5392:29: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 5392 |                             ret = xmlRegExecPushString(exec, fullname, NULL);
+      |                             ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/valid.c:5396:8: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 5396 |                             ret = xmlRegExecPushString(exec, cur->name, NULL);
+      |                             ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/valid.c:6252:6: warning: Value stored to 'cont' is never read [deadcode.DeadStores]
+ 6252 |             cont = elemDecl->content;
+      |             ^      ~~~~~~~~~~~~~~~~~
+3 warnings generated.
+[ 61%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xinclude.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/tree.c:1299:6: warning: Value stored to 'q' is never read [deadcode.DeadStores]
+ 1299 |             q = cur;
+      |             ^   ~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/tree.c:1456:3: warning: Value stored to 'charval' is never read [deadcode.DeadStores]
+ 1456 |                 charval = 0;
+      |                 ^         ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/tree.c:1527:6: warning: Value stored to 'q' is never read [deadcode.DeadStores]
+ 1527 |             q = cur;
+      |             ^   ~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/tree.c:1660:3: warning: Value stored to 'charval' is never read [deadcode.DeadStores]
+ 1660 |                 charval = 0;
+      |                 ^         ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/tree.c:3526:17: warning: Access to field 'next' results in a dereference of a null pointer (loaded from variable 'prev') [core.NullDereference]
+ 3526 |             prev->next = cur;
+      |             ~~~~       ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/tree.c:4846:9: warning: Value stored to 'sep' is never read [deadcode.DeadStores]
+ 4846 |         sep = "?";
+      |         ^     ~~~
+6 warnings generated.
+[ 63%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xlink.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xlink.c:145:4: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+  145 |                         ret = XLINK_TYPE_EXTENDED_SET;
+      |                         ^     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xlink.c:152:4: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+  152 |                         ret = XLINK_TYPE_EXTENDED_SET;
+      |                         ^     ~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[ 65%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlIO.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xinclude.c:1209:14: warning: Access to field 'intSubset' results in a dereference of a null pointer (loaded from variable 'doc') [core.NullDereference]
+ 1209 |     target = doc->intSubset;
+      |              ^~~~~~~~~~~~~~
+1 warning generated.
+[ 68%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlmemory.c.o
+[ 70%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlmodule.c.o
+[ 72%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlreader.c.o
+[ 74%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlregexp.c.o
+[ 76%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlsave.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlsave.c:779:20: warning: Access to field 'encoding' results in a dereference of a null pointer (loaded from variable 'doc') [core.NullDereference]
+  779 |             doc->encoding = oldenc;
+      |             ~~~           ^
+1 warning generated.
+[ 78%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlschemas.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c: In function ‘xmlSchemaVAttributesComplex’:
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:25827:63: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+25827 |                             snprintf((char *) prefix, 12, "p%d", counter++);
+      |                                                               ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:25827:29: note: ‘snprintf’ output between 3 and 13 bytes into a destination of size 12
+25827 |                             snprintf((char *) prefix, 12, "p%d", counter++);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlregexp.c:3692:48: warning: Dereference of null pointer [core.NullDereference]
+ 3692 |     exec->inputStack[exec->inputStackNr].value = xmlStrdup(value);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlregexp.c:4160:21: warning: Null pointer passed to 2nd parameter expecting 'nonnull' [core.NonNullParamChecker]
+ 4160 |                     memcpy(exec->errCounts, exec->counts,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4161 |                            exec->comp->nbCounters * sizeof(int));
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlregexp.c:4411:22: warning: Access to field 'states' results in a dereference of a null pointer (loaded from field 'comp') [core.NullDereference]
+ 4411 |                 if ((exec->comp->states[trans->to] != NULL) &&
+      |                      ^~~~~~~~~~~~~~~~~~
+3 warnings generated.
+[ 80%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlschemastypes.c.o
+[ 82%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlstring.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlstring.c:795:9: warning: Value stored to 'ix' is never read [deadcode.DeadStores]
+  795 |         ix = 0;
+      |         ^    ~
+1 warning generated.
+[ 85%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlunicode.c.o
+[ 87%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xmlwriter.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlwriter.c:995:25: warning: Value stored to 'count' is never read [deadcode.DeadStores]
+  995 |                         count =
+      |                         ^
+  996 |                             xmlOutputBufferWriteString(writer->out, "\n");
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[ 89%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xpath.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:13966:12: warning: Access to field 'value' results in a dereference of a null pointer (loaded from field 'negNsSet') [core.NullDereference]
+ 13966 |             neg = curWild->negNsSet->value;
+       |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:18695:36: warning: Access to field 'children' results in a dereference of a null pointer (loaded from field 'children') [core.NullDereference]
+ 18695 |                     particle->children->children =
+       |                               ~~~~~~~~           ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:19989:13: warning: Access to field 'baseType' results in a dereference of a null pointer (loaded from field 'subtypes') [core.NullDereference]
+ 19989 |             type = elemDecl->subtypes->baseType;
+       |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:23650:8: warning: Value stored to 'res' is never read [deadcode.DeadStores]
+ 23650 |                             res = 0;
+       |                             ^     ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:24469:5: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 24469 |     ret = 0;
+       |     ^     ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:24505:2: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 24505 |         ret = 0;
+       |         ^     ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:24514:5: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 24514 |     ret = 0;
+       |     ^     ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:24541:2: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 24541 |         ret = 0;
+       |         ^     ~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xmlschemas.c:25738:2: warning: Value stored to 'fixed' is never read [deadcode.DeadStores]
+ 25738 |         fixed = 0;
+       |         ^       ~
+9 warnings generated.
+[ 91%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xpointer.c.o
+[ 93%] Building C object _deps/libxml2-build/CMakeFiles/LibXml2.dir/xzlib.c.o
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xpath.c:12507:23: warning: Access to field 'boolval' results in a dereference of a null pointer (loaded from field 'value') [core.NullDereference]
+ 12507 |         ctxt->value->boolval = 1;
+       |               ~~~~~          ^
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xpath.c:13777:7: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 13777 |                     ret = xmlStreamPop(patstream);
+       |                     ^     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xpath.c:13823:3: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 13823 |                 ret = xmlStreamPop(patstream);
+       |                 ^     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xpath.c:13830:3: warning: Value stored to 'ret' is never read [deadcode.DeadStores]
+ 13830 |                 ret = xmlStreamPop(patstream);
+       |                 ^     ~~~~~~~~~~~~~~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/build-scan/_deps/libxml2-src/xpath.c:13921:16: warning: Access to field 'depth' results in a dereference of a null pointer (loaded from field 'context') [core.NullDereference]
+ 13921 |     oldDepth = ctxt->context->depth;
+       |                ^~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+[ 95%] Linking C static library libxml2.a
+[ 95%] Built target LibXml2
+[ 97%] Building CXX object CMakeFiles/rbpo_lab.dir/src/main.cpp.o
+[100%] Linking CXX executable rbpo_lab
+[100%] Built target rbpo_lab
+scan-build: Analysis run complete.
+scan-build: 48 bugs found.
+scan-build: Run 'scan-view /home/maria/Загрузки/rbpo-lab/analysis/scan-build/2026-10-18-184337-21678-1' to examine bug reports.

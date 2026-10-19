@@ -1,0 +1,52 @@
+=================================================================
+==61430==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x798a35800350 at pc 0x600c6da09f8e bp 0x7ffc5f2569f0 sp 0x7ffc5f2561a8
+WRITE of size 81 at 0x798a35800350 thread T0
+    #0 0x600c6da09f8d in strcpy (/home/maria/Загрузки/rbpo-lab/build-afl/rbpo_lab+0x104f8d) (BuildId: 1bf94b262b97d524cef99eb3573725570a2b1d59)
+    #1 0x600c6da697a8 in addRecord(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, double, Statistics&) /home/maria/Загрузки/rbpo-lab/src/main.cpp:93:5
+    #2 0x600c6da69ec2 in process(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) /home/maria/Загрузки/rbpo-lab/src/main.cpp:124:9
+    #3 0x600c6da6f738 in main /home/maria/Загрузки/rbpo-lab/src/main.cpp:178:34
+    #4 0x798a3782a574 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #5 0x798a3782a627 in __libc_start_main csu/../csu/libc-start.c:360:3
+    #6 0x600c6d9828a4 in _start (/home/maria/Загрузки/rbpo-lab/build-afl/rbpo_lab+0x7d8a4) (BuildId: 1bf94b262b97d524cef99eb3573725570a2b1d59)
+
+Address 0x798a35800350 is located in stack of thread T0 at offset 80 in frame
+    #0 0x600c6da696bf in addRecord(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, double, Statistics&) /home/maria/Загрузки/rbpo-lab/src/main.cpp:90
+
+  This frame has 2 object(s):
+    [32, 33) '__c.addr.i'
+    [48, 80) 'displayName' (line 91) <== Memory access at offset 80 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow (/home/maria/Загрузки/rbpo-lab/build-afl/rbpo_lab+0x104f8d) (BuildId: 1bf94b262b97d524cef99eb3573725570a2b1d59) in strcpy
+Shadow bytes around the buggy address:
+  0x798a35800080: f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5
+  0x798a35800100: f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5
+  0x798a35800180: f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5
+  0x798a35800200: f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5
+  0x798a35800280: f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5
+=>0x798a35800300: f1 f1 f1 f1 f8 f2 00 00 00 00[f3]f3 f3 f3 f3 f3
+  0x798a35800380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x798a35800400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x798a35800480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x798a35800500: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x798a35800580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==61430==ABORTING

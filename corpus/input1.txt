@@ -1,0 +1,4 @@
+<records>
+  <record name="Alice" value="10"/>
+  <record name="Bob" value="20"/>
+</records>

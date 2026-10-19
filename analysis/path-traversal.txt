@@ -1,0 +1,10 @@
+Record: Alice = 10.00
+Record: Bob = 20.00
+Count: 2
+Sum: 30.00
+Average: 15.00
+Saved: ../reports-demo/proof.txt
+VULNERABILITY CONFIRMED
+Count: 2
+Sum: 30.00
+Average: 15.00

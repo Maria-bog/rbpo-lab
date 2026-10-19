@@ -1,0 +1,5 @@
+<records>
+  <record name="Masha" value="-5.5"/>
+  <record name="Ivan" value="0"/>
+  <record name="Olga" value="14.5"/>
+</records>

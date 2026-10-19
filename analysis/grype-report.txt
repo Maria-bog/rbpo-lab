@@ -1,0 +1,29 @@
+NAME     INSTALLED  FIXED IN                 TYPE            VULNERABILITY   SEVERITY  EPSS         RISK   
+libxml2  2.11.5     2.13.9                   UnknownPackage  CVE-2025-49796  Critical  1.6% (74th)  1.4    
+libxml2  2.11.5     *2.11.8, 2.12.7          UnknownPackage  CVE-2024-34459  High      1.8% (78th)  1.3    
+libxml2  2.11.5     *2.11.9, 2.12.9, 2.13.3  UnknownPackage  CVE-2024-40896  Critical  1.2% (68th)  1.1    
+libxml2  2.11.5     *2.12.10, 2.13.6         UnknownPackage  CVE-2024-56171  Critical  1.2% (67th)  1.0    
+libxml2  2.11.5                              UnknownPackage  CVE-2025-6021   High      1.4% (71st)  1.0    
+libxml2  2.11.5     *2.11.7, 2.12.5          UnknownPackage  CVE-2024-25062  High      1.3% (70th)  1.0    
+libxml2  2.11.5     2.13.9                   UnknownPackage  CVE-2025-49794  Critical  0.8% (56th)  0.8    
+libxml2  2.11.5     *2.12.10, 2.13.6         UnknownPackage  CVE-2025-27113  High      1.1% (63rd)  0.7    
+libxml2  2.11.5                              UnknownPackage  CVE-2023-45322  Medium    1.0% (61st)  0.6    
+libxml2  2.11.5     2.15.2                   UnknownPackage  CVE-2026-0990   Medium    1.0% (60th)  0.5    
+libxml2  2.11.5     2.13.9                   UnknownPackage  CVE-2025-49795  High      0.6% (47th)  0.4    
+libxml2  2.11.5     *2.13.8, 2.14.2          UnknownPackage  CVE-2025-32415  High      0.6% (46th)  0.4    
+libxml2  2.11.5     2.14.6                   UnknownPackage  CVE-2025-7425   High      0.4% (37th)  0.3    
+libxml2  2.11.5     *2.12.10, 2.13.6         UnknownPackage  CVE-2025-24928  High      0.4% (30th)  0.3    
+libxml2  2.11.5     *2.13.8, 2.14.2          UnknownPackage  CVE-2025-32414  High      0.4% (30th)  0.3    
+libxml2  2.11.5     2.15.2                   UnknownPackage  CVE-2026-0989   Low       0.5% (43rd)  0.2    
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86143  High      0.2% (8th)   0.1    
+libxml2  2.11.5     2.15.2                   UnknownPackage  CVE-2026-0992   Low       0.5% (38th)  0.1    
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86144  High      0.2% (7th)   0.1    
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86139  High      0.2% (5th)   0.1    
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86140  High      0.2% (4th)   0.1    
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86142  High      0.2% (4th)   0.1    
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86138  High      0.1% (2nd)   < 0.1  
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86137  Medium    0.2% (8th)   < 0.1  
+libxml2  2.11.5                              UnknownPackage  CVE-2026-11979  High      0.1% (3rd)   < 0.1  
+libxml2  2.11.5                              UnknownPackage  CVE-2025-6170   Low       0.3% (23rd)  < 0.1  
+libxml2  2.11.5     2.15.2                   UnknownPackage  CVE-2025-8732   Low       0.2% (11th)  < 0.1  
+libxml2  2.11.5     2.15.4                   UnknownPackage  CVE-2026-86141  Low       0.2% (5th)   < 0.1

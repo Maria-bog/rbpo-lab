@@ -1,0 +1,7 @@
+Cppcheck 2.17.1
+Ubuntu LLVM version 20.1.8
+  Optimized build.
+Ubuntu clang version 20.1.8 (0ubuntu4)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-20/bin

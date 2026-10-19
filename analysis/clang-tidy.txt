@@ -1,0 +1,38 @@
+68829 warnings generated.
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:16:37: warning: performing an implicit widening conversion to type 'const std::size_t' (aka 'const unsigned long') of a multiplication performed in type 'int' [bugprone-implicit-widening-of-multiplication-result]
+   16 | constexpr std::size_t INPUT_LIMIT = 1024 * 1024;
+      |                                     ^
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:16:37: note: make conversion explicit to silence this warning
+    4 | #include <cstring>
+    5 | #include <filesystem>
+    6 | #include <fstream>
+    7 | #include <iomanip>
+    8 | #include <iostream>
+    9 | #include <locale>
+   10 | #include <memory>
+   11 | #include <sstream>
+   12 | #include <stdexcept>
+   13 | #include <string>
+   14 | 
+   15 | namespace fs = std::filesystem;
+   16 | constexpr std::size_t INPUT_LIMIT = 1024 * 1024;
+      |                                     ^~~~~~~~~~~
+      |                                     static_cast<const std::size_t>( )
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:16:37: note: perform multiplication in a wider type
+   16 | constexpr std::size_t INPUT_LIMIT = 1024 * 1024;
+      |                                     ^~~~
+      |                                     static_cast<long>( )
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:42:17: warning: incrementing and referencing a variable in a complex condition can cause unintended side-effects due to C++'s order of evaluation, consider moving the modification outside of the condition to avoid misunderstandings [bugprone-inc-dec-in-conditions]
+   42 |             if (++i == argc || std::string(argv[i]).empty()) {
+      |                 ^
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:42:49: note: variable is referenced here
+   42 |             if (++i == argc || std::string(argv[i]).empty()) {
+      |                                                 ^
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:93:5: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+   93 |     std::strcpy(displayName, name.c_str());
+      |     ^~~~~~~~~~~
+/home/maria/Загрузки/rbpo-lab/src/main.cpp:93:5: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+   93 |     std::strcpy(displayName, name.c_str());
+      |     ^~~~~~~~~~~
+Suppressed 68826 warnings (68826 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
