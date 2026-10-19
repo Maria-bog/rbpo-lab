@@ -88,7 +88,10 @@ double parseValue(const std::string& text) {
 }
 
 void addRecord(const std::string& name, double value, Statistics& stats) {
-    std::cout << "Record: " << name << " = "
+    char displayName[32];
+    // INTENTIONAL CWE-120: name length is not checked.
+    std::strcpy(displayName, name.c_str());
+    std::cout << "Record: " << displayName << " = "
               << std::fixed << std::setprecision(2) << value << '\n';
     ++stats.count;
     stats.sum += value;
@@ -142,10 +145,9 @@ void saveReport(const std::string& userPath, const std::string& report) {
     if (relative.is_absolute()) throw std::runtime_error("Use a relative path");
     const fs::path target = fs::weakly_canonical(base / relative);
 
-    const fs::path inside = target.lexically_relative(base);
-
-    if (inside.empty() || inside == "." ||
-        *inside.begin() == "..") {
+    // INTENTIONAL CWE-22: textual prefix is not directory containment.
+    // "reports-demo" starts with "reports", but is a different directory.
+    if (target.string().compare(0, base.string().size(), base.string()) != 0) {
         throw std::runtime_error("Path outside reports");
     }
     std::ofstream output(target, std::ios::binary | std::ios::trunc);

@@ -11,8 +11,8 @@ if(ENABLE_ASAN)
 endif()
 
 # Change version AND hash together when updating the dependency.
-set(XML_VERSION "2.15.4")
-set(XML_SHA256 "98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821")
+set(XML_VERSION "2.11.5")
+set(XML_SHA256 "3727b078c360ec69fa869de14bd6f75d7ee8d36987b071e6928d4720a28df3a6")
 string(REGEX MATCH "^[0-9]+\\.[0-9]+" XML_SERIES "${XML_VERSION}")
 include(FetchContent)
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
