@@ -1,21 +1,25 @@
-# CMake build directories
+# CMake: результаты сборки
 /build*/
 
-# AFL++ generated corpus and runtime files
+# AFL++: временные результаты фаззинга
 /findings/
 
-# Large Clang Static Analyzer HTML reports
-/analysis/scan-build/
-/analysis/scan-build-fixed/
+# Clang Static Analyzer: большие HTML-отчёты
+/analysis/scan-build*/
 
-# Generated files
-core
-core.*
-*.o
-*.a
-*.so
+# LibreOffice: временные файлы
+.~lock.*
+.~lock.*#
+*.bak
 
-# Editor and system files
+# Файлы редакторов
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+
+# Системные файлы
 .DS_Store
+core
+core.*
